@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Click Me Button!!!
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <h1>Welcome to ITC5202</h1>
+    <form>
+        <input type="button" value="Click here to display my name" name="Click Me" onclick="clickme()">
+        <div id="message"></div>
+    </form>
+</body>
+<script>
+    function clickme() {
+        alert("XML and Javascript Lecture.");
+        let text;
+        const message = document.getElementById("message");
+        text = "Vidhi Lad";
+        message.innerHTML = text;
+        return true;
+        }
+</script>
+
+</html>
