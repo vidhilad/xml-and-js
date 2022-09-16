@@ -1,0 +1,31 @@
+Try to display/represent the following Data in XML format
+
+| Empno | Empname | Salary |
+| ----- | ------- | ------ |
+| 1001  | Alex    | 3000   |
+| 1002  | Sarah   | 4000   |
+| 1003  | Peter   | 3500   |
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<company>
+    <employee>
+        <empNo>1001</empNo>
+        <empName>Alex</empName>
+        <salary>3000</salary>
+    </employee>
+    <employee>
+        <empNo>1002</empNo>
+        <empName>Sarah</empName>
+        <salary>4000</salary>
+    </employee>
+    <employee>
+        <empNo>1003</empNo>
+        <empName>Peter</empName>
+        <salary>3500</salary>
+    </employee>
+</company>

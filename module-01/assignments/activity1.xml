@@ -1,0 +1,68 @@
+1. Create a simple XML file which describes you and your interests/hobbies
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<community>
+    <individual>
+        <name>Vidhi Lad</name>
+        <interests>Reading</interests>
+        <hobbies>Cycling<hobbies>
+    </individual>
+</community>
+
+2. How to structure the data in previous activity in order to have Name/Hobbies for a group of 10 people?
+
+<?xml version="1.0" encoding="utf-8"?>
+<community>
+    <individual>
+        <name>Vidhi Lad</name>
+        <interests>Reading</interests>
+        <hobbies>Cycling<hobbies>
+    </individual>
+    <individual>
+        <name>Rakhi Kansagra</name>
+        <interests>Marketing</interests>
+        <hobbies>Walking<hobbies>
+    </individual>
+    <individual>
+        <name>Ishan Patel</name>
+        <interests>Share Market</interests>
+        <hobbies>Badminton<hobbies>
+    </individual>
+    <individual>
+        <name>Caroline Sebastain</name>
+        <interests>Reading</interests>
+        <hobbies>Writing<hobbies>
+    </individual>
+    <individual>
+        <name>Aneesha Robert</name>
+        <interests>Logistics</interests>
+        <hobbies>Photography<hobbies>
+    </individual>
+    <individual>
+        <name>Krupali Bhimani</name>
+        <interests>Arts</interests>
+        <hobbies>Photography<hobbies>
+    </individual>
+    <individual>
+        <name>Jensi Mascarenhas</name>
+        <interests>Business</interests>
+        <hobbies>Drawing<hobbies>
+    </individual>
+    <individual>
+        <name>Mahesh Lad</name>
+        <interests>Hardware</interests>
+        <hobbies>Yoga<hobbies>
+    </individual>
+    <individual>
+        <name>Silvan Dabre</name>
+        <interests>Reading</interests>
+        <hobbies>Cycling<hobbies>
+    </individual>
+    <individual>
+        <name>Arleen Rodriques</name>
+        <interests>Logistics</interests>
+        <hobbies>Writing<hobbies>
+    </individual>
+</community>
+
