@@ -30,23 +30,23 @@
             Your Comment:<br>
             <textarea id="comment" name="comment" rows="3" cols="40">
             </textarea>
-            <br><input type="button" value="Send your Feedback" name="Feedback" onclick="feedback()">
+            <br><input type="button" id="Feedback" value="Send your Feedback" name="Feedback" onclick="feedback()">
             <div id="message"></div>
-            <div id="text1"></div>
-            <div id="text2"></div>
         </form>
     </div>
 </body>
 <script>
-    function feedback() {
+    function feedback(){
         alert("XML and Javascript Lecture.");
-        let text1, text2;
         let email = document.getElementById("email");
         let date = document.getElementById("date");
-        text1 = "Email:" + " " + email;
-        text2 = "Date:" + " " + date;
+        let comment=document.getElementById("comment");
         const message = document.getElementById("message");
-        message.innerHTML = text1 + "\n" + text2;
+
+        message="Email" + email+"\n"+
+                "Date:"+date+"\n"+
+                "Comment:"+comment+"\n";
+        message.innerHTML="Your Details:"+"\n"+message;
     }
 </script>
 
