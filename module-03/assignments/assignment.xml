@@ -2,8 +2,7 @@
 <?xml-stylesheet type="text/css" href="style.css"?>
 <!DOCTYPE catalog
 [
-    <!ELEMENT catalog (product+
-    )>
+    <!ELEMENT catalog (product+)>
     <!ELEMENT product (catalog_item+)>
     <!ATTLIST product product_id CDATA #REQUIRED>
     <!ATTLIST product description CDATA #REQUIRED>

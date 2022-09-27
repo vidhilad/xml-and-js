@@ -24,7 +24,7 @@
                         <xs:element name="color_swatch" type="colors" minOccurs="0" maxOccurs="unbounded" />
                     </xs:sequence>
                     <xs:attribute name="description" type="xs:string" />
-                </complexType>
+                </xs:complexType>
             </xs:element>
             <xs:complexType name="color_swatch" >
                 <xs:sequence>

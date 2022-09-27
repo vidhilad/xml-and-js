@@ -8,3 +8,14 @@
 -With the help of namespaces it becomes easier to understand as well as write the code for the following xml.
 
 -Moreover, with the use of XSD more exposure can be given on elements along with the attributes and certain additional data can also be specified while the same is not the case with DTD as it only helps in giving the basic information on elements and attributes.
+
+![image info](../assignment_assets/assignment2_1.png)
+![image info](../assignment_assets/assignment2_2.png)
+![image info](../assignment_assets/assignment2_3.png)
+![image info](../assignment_assets/assignment2_4.png)
+
+
+![image info](../assignment_assets/assignment2_21.png)
+![image info](../assignment_assets/assignment2_22.png)
+
+
