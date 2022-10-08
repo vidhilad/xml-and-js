@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="people.css" />
+
+    <title>People</title>
+    </head>
+  <body>
+    <table id="people">
+      <tr><th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>IP Address</th>
+        </tr>
+    </table>
+    <script>
+    const xhttp=new XMLHttpRequest();
+    xhttp.onreadystatechange=function(){
+        if(this.readyState===4 && this.status===200){
+            const xmlDoc=this.responseXML;
+            const details=xmlDoc.getElementsByTagName('people');
+            const list=document.getElementById('people');
+            for (let index = 0; index < details.length; index++) {
+                const data = details[index];
+
+                const number = data.getElementsByTagName(`id`)[0].childNodes[0].nodeValue;
+                const firstName = data.getElementsByTagName(`first_name`)[0].childNodes[0].nodeValue;
+                const lastName = data.getElementsByTagName(`last_name`)[0].childNodes[0].nodeValue;
+                const mail = data.getElementsByTagName(`email`)[0].childNodes[0].nodeValue;
+                const gender = data.getElementsByTagName(`gender`)[0].childNodes[0].nodeValue;
+                const ipAddress = data.getElementsByTagName(`ip_address`)[0].childNodes[0].nodeValue;
+
+               
+                console.log(firstName);
+                const interdata=`
+                                 <tr>
+                                  <td>${number}</td>
+                                  <td>${firstName}</td>
+                                  <td>${lastName}</td>
+                                  <td>${mail}</td>
+                                  <td>${gender}</td>
+                                  <td>${ipAddress}</td>
+                                 </td>`;
+                                  
+                list.innerHTML=list.innerHTML+interdata;
+            }
+        }
+    };
+    xhttp.open("GET","people.xml",true);
+    xhttp.send();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+table{
+    border: 2px double;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 27%;
+    margin-top: 1%;
+}
+th{
+    border-bottom: 2px solid;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: aquamarine;
+    padding: 6px;
+}
+th:nth-child(1){
+    background-color: aqua;
+}
+th:nth-child(2){
+    background-color: gold;
+}
+th:nth-child(3){
+    background-color: violet;
+}
+th:nth-child(4){
+    background-color: lightcoral;
+}
+th:nth-child(5){
+    background-color: lightgreen;
+}
+th:nth-child(6){
+    background-color: darksalmon;
+}
+td{
+    background-color: whitesmoke;
+    border-bottom: 1px solid;
+    border-left: 1px double;
+    font-weight: bold;
+    font-size:15px;
+    text-align: center;
+    padding:6px;
+}
+td:nth-child(even){
+    background-color:white;
+}
