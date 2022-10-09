@@ -1,0 +1,41 @@
+article{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+    color:darkorchid;
+    font-size: 30px;
+}
+h4{
+    color:darksalmon;
+    font-size: 20px;
+}
+div {
+    border:2px solid darksalmon;
+    border-radius: 5px;
+    margin-top: 1px;
+    padding: 10px;
+    width:fit-content;
+}
+h4{
+    margin-top: 0px;
+}
+table{
+    border:2px double sandybrown;
+    
+}
+ td{
+    border:1px double sandybrown;
+    padding: 5px;
+    text-align: center;    
+}
+th{
+    border:1px double sandybrown;
+    padding: 5px;
+    text-align: center;
+}
+td:nth-child(odd){
+    background-color: khaki;
+}
+td:nth-child(even){
+    background-color:lightgreen;
+}
