@@ -38,3 +38,24 @@
     </orders>
   </customer>
 </customers>
+
+[
+  {
+    "productId": "e4892f6a-7cce-11ec-90d6-0242ac120003",
+    "description": "Cardigan Sweater",
+    "productImage": "cardigan.jpg",
+    "items": [
+      {
+        "itemNumber": "QWZ5671",
+        "price": 39.95,
+        "gender": "Men",
+        "swatches": [
+          {
+            "description": "Medium",
+            "colors": [
+              { "color": "Red", "image": "red_cardigan.jpg" },
+              { "color": "Burgundy", "image": "burgundy_cardigan.jpg" }
+            ]
+          }
+        ]
+      },

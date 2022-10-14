@@ -1,0 +1,20 @@
+ol{
+    list-style-type: none;
+}
+p{
+    text-align: right;
+}
+article{
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: fit-content;
+}
+h2{
+    padding-left: 40px;
+    font-size: 40px;
+}

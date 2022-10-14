@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="books.css" />
+
+    <title>Library</title>
+    </head>
+  <body>
+    <h2>Books Catalog</h2>
+
+    <ol id="books"></ol>
+    <script>
+    const xhttp=new XMLHttpRequest();
+    xhttp.onreadystatechange=function(){
+        if(this.readyState===4 && this.status===200){
+            const xmlDoc=this.responseXML;
+            const details=xmlDoc.getElementsByTagName('type');
+            const list=document.getElementById('books');
+            for (let index = 0; index < details.length; index++) {
+                const data = details[index];
+
+                const title = data.getElementsByTagName(`title`)[0].childNodes[0].nodeValue;
+                const author = data.getElementsByTagName(`author`)[0].childNodes[0].nodeValue;
+                const year = data.getElementsByTagName(`year`)[0].childNodes[0].nodeValue;
+                const price = data.getElementsByTagName(`price`)[0].childNodes[0].nodeValue;
+                const category = data.getElementsByTagName(`category`)[0].childNodes[0].nodeValue;
+
+               
+                console.log(title);
+                const interdata=`
+                                <li>
+                                <article>
+                                    <p>${category}</p>
+                                    <h3>${title}</h3>
+                                    <div>
+                                        Authors: ${author}<br><br>
+                                        Book was written in ${year}<br>
+                                        Retail price is ${price}
+                                    </div>
+                                </article>
+                                </li>
+                                 `;
+                
+                list.innerHTML=list.innerHTML+interdata;
+            }
+        }
+    };
+    xhttp.open("GET","books.xml",true);
+    xhttp.send();
+    </script>
+    
+  </body>
+</html>
