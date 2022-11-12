@@ -98,3 +98,12 @@ const data=[
   const filtered=data.filter((activity)=> activity.id>5);
   console.log("ID Greater than 5:");
   console.log(filtered);
+
+let nums = [10, 50, 88];
+nums.filter((n) => n > 10);
+console.log(nums);
+
+const fn = () => console.log("important function");
+const another = fn;
+another("another function");
+
