@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="customers.css" />
+
+    <title>Customers</title>
+</head>
+  <body>
+    <ul id="customers"></ul>
+    <script src="customerPromise.js"></script> 
+    <!-- <script src="customer.js"></script>  -->
+
+     <!-- <script src="customerFetch.js"></script>  -->
+  </body>
+</html>
+ 
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="customers.css" />
+
+    <title>Customers</title>
+</head>
+
+<body>
+    <ul id="customers"></ul>
+    <script>
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "customers.xml", true);
+        xhttp.send();
+
+        function stringToNode(html) {
+            const template = document.createElement(`template`);
+            html = html.trim();
+            template.innerHTML = html;
+            return template.content;
+        }
+
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                const xmlDoc = this.responseXML;
+                const details = xmlDoc.getElementsByTagName('customer');
+                const order = xmlDoc.getElementsByTagName('order');
+                const name = xmlDoc.getElementsByTagName('name');
+
+                const list = document.getElementById('customers');
+                for (let index = 0; index < details.length; index++) {
+                    const data = details[index];
+                    const data2 = order[index];
+                    const data3 = name[index];
+                    const listItem = stringToNode(`
+                                <li><article><h2>${data.getAttribute('custID')}</h2>
+                                            <p>${data3.getAttribute(`title`)}${data.getElementsByTagName('name')[0].childNodes[0].nodeValue}</p>
+                                            <div>
+                                                <h4>Address</h4>
+                                                ${data.getElementsByTagName('address')[0].childNodes[0].nodeValue}
+                                                <h4>Contact:</h4>
+                                                ${data.getElementsByTagName('phone')[0].childNodes[0].nodeValue}
+                                            </div><br>
+                                            <table>
+                                                <tr>
+                                                    <th>Order Date</th>
+                                                    <th>Order ID</th>
+                                                    <th>Order By</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>${data.getElementsByTagName('orderDate')[0].childNodes[0].nodeValue}
+                                                    <td>${data2.getAttribute('orderBy')}</td>
+                                                    <td>${data2.getAttribute('orderID')}</td>
+                                                </tr>
+                                            </table><br>
+                                            <table>
+                                                <tr>
+                                                    <th>Item Price</th>
+                                                    <th>Item Quantity</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>${data.getElementsByTagName('itemPrice')[0].childNodes[0].nodeValue}</td>
+                                                    <td>${data.getElementsByTagName('itemQty')[0].childNodes[0].nodeValue}</td>     
+                                                </tr>
+                                            </table>
+                                            
+                                    
+                                </article></li>
+
+                `);
+                    list.append(listItem);
+
+
+
+                }
+
+
+
+
+            }
+        };
+    </script>
+</body>
+
+</html> -->
