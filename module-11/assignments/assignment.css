@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 5px;
+}
+
+.genre-card {
+    background-color: #4daf64;
+    border: 2pz solid darkgreen;
+    border-radius: 3px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.genre-card>div {
+    margin: 0;
+}
+.tracks {
+    list-style: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
